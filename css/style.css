@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+ul,
+ol {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* header */
+
+header {
+    color: white;
+    background-color: black;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+/* main */
+.portada {
+    background-image: url(../img/fondo3.jpg);
+    height: 93vh;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mapa {
+    margin-left: 1400px;
+    text-align: center;
+}
+
+.redes {
+    text-align: center;
+
+}
+
+@media (min-width: 400px) and (max-width:700px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portada {
+        height: 93vh;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+
+}
+
+
+/* main index */
+.img-index {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* main envios */
+
+.info {
+
+    width: 320px;
+
+}
+
+
+
+.envios {
+
+    margin: 70px 50px;
+}
+
+
+/* main nosotros */
+.portada {
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.texto-portada {
+    color: white;
+    background-color: rgb(7, 3, 0);
+    width: 650px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 400px) and (max-width:700px) {
+    .texto-portada {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+
+    }
+
+}
+
+
+/* main contacto */
+.texto-contacto{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    
+    border-radius: 4px;
+    
+    
+        
+}
+
+.form{
+    color: white;
+    background-color: black;
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    
+    border-radius: 4px;
+        
+}
+
+.controls{
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+
+}
+
+.botons{
+    width: 50%;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    margin-left: 105px;
+}
+
+@media (min-width: 400px) and (max-width:700px) {
+    
+    }
+
+
+
+
+/* main productos */

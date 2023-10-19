@@ -40,6 +40,12 @@ header {
     gap: 1rem;
 }
 
+.barra-busqueda {
+    width: 300px;
+    border-radius: 4px;
+
+}
+
 
 
 /* main */
@@ -69,56 +75,62 @@ footer {
 
 }
 
-@media (min-width: 400px) and (max-width:700px) {
 
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .portada {
-        height: 93vh;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-
-
-}
 
 
 /* main index */
 .img-index {
     padding: 16px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 1rem;
+
+
+
+
+
+
+
+
 
 }
 
 
 /* main envios */
 
-.info {
 
-    width: 320px;
-
-}
 
 
 
 .envios {
-
-    margin: 70px 50px;
+    color: black;
+    background-color: blac;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    height: 500
 }
+
+@media (min-width: 400px) and (max-width:700px) {
+    .envios {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 1rem;
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+
+
 
 
 /* main nosotros */
@@ -135,7 +147,7 @@ footer {
 
 }
 
-.texto-portada {
+.texto-nosotros {
     color: white;
     background-color: rgb(7, 3, 0);
     width: 650px;
@@ -146,40 +158,59 @@ footer {
 }
 
 @media (min-width: 400px) and (max-width:700px) {
-    .texto-portada {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-nosotros {
+        display: flex;
+        flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 50px;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
     }
 
+
+
+
 }
+
+
+
+
 
 
 /* main contacto */
-.texto-contacto{
-    color: white;
-    background-color: rgb(0, 0, 0);
-    
+.texto-contacto {
+    color: rgb(8, 8, 8);
+
+
     border-radius: 4px;
-    
-    
-        
+
+
+
 }
 
-.form{
+.form {
     color: white;
     background-color: black;
     width: 450px;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
-    
+
     border-radius: 4px;
-        
+
 }
 
-.controls{
+.controls {
     width: 100%;
     padding: 7px;
     border-radius: 4px;
@@ -188,19 +219,13 @@ footer {
 
 }
 
-.botons{
+.botons {
     width: 50%;
     border: none;
     padding: 12px;
     font-size: 14px;
     margin-left: 105px;
 }
-
-@media (min-width: 400px) and (max-width:700px) {
-    
-    }
-
-
 
 
 /* main productos */

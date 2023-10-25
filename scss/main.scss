@@ -1,0 +1,216 @@
+
+/* header */
+
+header {
+    color: white;
+    background-color: black;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.barra-busqueda {
+    width: 300px;
+    border-radius: 4px;
+
+}
+
+
+
+/* main */
+.main {
+    background-image: url(../img/fondo3.jpg);
+    height: 93vh;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.redes {
+    text-align: center;
+
+}
+
+
+/* main index */
+.contenedor{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.cards{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main envios */
+
+
+
+
+
+.envios {
+    color: black;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    height: 500
+}
+
+@media (min-width: 400px) and (max-width:700px) {
+    .envios {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 1rem;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+
+/* main nosotros */
+.portada {
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.texto-nosotros {
+    color: white;
+    background-color: rgb(7, 3, 0);
+    width: 650px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 400px) and (max-width:700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-nosotros {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+/* main contacto */
+.texto-contacto {
+    color: rgb(8, 8, 8);
+
+
+    border-radius: 4px;
+
+
+
+}
+
+.form {
+    color: white;
+    background-color: black;
+    width: 450px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+
+    border-radius: 4px;
+
+}
+
+.controls {
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+
+}
+
+.botons {
+    width: 50%;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    margin-left: 105px;
+}
+
+
+/* main productos */

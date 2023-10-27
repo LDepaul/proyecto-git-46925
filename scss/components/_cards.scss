@@ -1,0 +1,34 @@
+.card {
+    width: 350px;
+    margin-left: 210px;
+    box-shadow: $sombra;
+    margin-top: 200px;
+    
+
+
+}
+
+.card-img {
+    object-fit: cover;
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+
+}
+
+.card-body {
+    color: rgb(3, 1, 1);
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.card-pos{
+    display: flex;
+    
+
+}
+
+
+    

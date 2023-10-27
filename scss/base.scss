@@ -9,12 +9,43 @@ $sombra: 0px 10px 5px 2px;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
 ul,
 ol {
     list-style: none;
 }
+
+body{
+    background-color: #e6e6e6;
+    background-image: url(../img/fondo3.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+    color: #110d0d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+// a{
+    // color: rgb(0, 0, 0);
+    // text-decoration: none;
+// }
+
+a:hover{
+    background-color: #000;
+    color: #fff;
+}
+

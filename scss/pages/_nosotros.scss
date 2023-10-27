@@ -1,0 +1,32 @@
+
+
+.texto-nosotros {
+    color: white;
+    background-color: rgb(7, 3, 0);
+    width: 650px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 400px) and (max-width:700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-nosotros {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+
+    
+
+
+
+
+}

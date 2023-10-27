@@ -7,59 +7,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>BLANQUERÍA</title>
 </head>
 
 <body>
     <header>
-        <h1>BLANQUERÍA</h1>
+
+        <div class="logo">
+
+            <h1>BLANQUERIA</h1>
+            <!-- <a href=""></a> <img class="img-header" src="./img/BLANQUERIA 3.png" alt=""> -->
+
+        </div>
 
 
-        <div class="barra-busqueda">
+        <div class="container">
+            <input type="text" placeholder="Buscar...">
+            <a href="#"></a>
+            <i class="fas fa-search"></i>
 
-            <input type="text" value="Buscar">
-            <button class=""><i class="fa-solid fa-magnifying-glass"></i></button>
 
+            
         </div>
 
 
         <div>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/envios.html">Envios</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/contacto.html">contacto</a></li>
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="./pages/envios.html">ENVIOS</a></li>
+                    <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
                 </ul>
             </nav>
-            <hr>
+
         </div>
 
 
     </header>
 
-    <main class="portad">
-        <div class="contenedor">
+    <main class="portada">
 
-            <div class="cards">
-
-                <img src="./img/toallas.jpg" alt="">
+        <section class="ofertas-index">
 
 
-            </div>
+            <img class="ofertas" src="./img/ofertas limitadas.png" alt="">
 
-            <div class="desc-tyt">
+        </section>
 
-                <h2>Toallas y Toallones</h2>
-                <a href="#">ver producto</a>
+        <section class="card-pos">
 
-            </div>
+            <article>
 
-        </div>
+                <div class="card">
+
+                    <img class="card-img" src="./img/toallas.jpg" alt="">
 
 
+
+                    <div class="card-body">
+
+                        <h2>Toallas y Toallones</h2>
+
+                        <a class="card__btn" href="">Ver Productos</a>
+
+                    </div>
+                </div> <br>
+            </article>
+
+
+            <article>
+
+                <div class="card">
+
+                    <img class="card-img" src="./img/sabanas.jpg" alt="">
+
+
+
+                    <div class="card-body">
+
+                        <h2>Sabanas</h2>
+
+                        <a class="card__btn" href="">Ver Productos</a>
+
+                    </div>
+                </div> <br>
+            </article>
+
+
+            <article>
+
+                <div class="card">
+
+                    <img class="card-img" src="./img/acolchados.jpg" alt="">
+
+
+
+                    <div class="card-body">
+
+                        <h2>Acolchados</h2>
+
+                        <a class="card__btn" href="">Ver Productos</a>
+
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
 
 
 
@@ -69,15 +127,7 @@
 
 
     <footer>
-        <hr>
-        <h3>BLANQUERIA</h3>
 
-        <div class="redes">
-            <ul>
-                <li>Facebook </li>
-                <li>Instagram </li>
-            </ul>
-        </div>
 
 
 

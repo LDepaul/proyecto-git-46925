@@ -1,17 +1,27 @@
-.envios {
-    color: black;
+.titulo-envios{
+    text-align: center;
+    margin-top: 150px;
+}
 
-    
-    
-    gap: 1rem;
+.envios {
+    color: rgb(248, 248, 248);
+    background-color: #363333;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 900px;
-    height: 500
+    // margin-top: 400px;
+    margin: 100px;
+    gap: 1rem;
+
 }
 
 
-@media (min-width: 400px) and (max-width:700px) {
+
+
+@include mq-sm {
     .envios {
         display: flex;
         flex-direction: column;
@@ -20,5 +30,10 @@
         gap: 1rem;
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    footer{
+        max-width: 100%;
+
     }
 }

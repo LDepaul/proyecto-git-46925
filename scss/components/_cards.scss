@@ -1,8 +1,9 @@
 .card {
     width: 350px;
-    // margin-left: 210px;
+
     box-shadow: $sombra;
-    margin-top: 200px;
+    margin-top: 300px;
+
     border-radius: 8px;
 
 
@@ -19,17 +20,31 @@
 .card-body {
     color: rgb(3, 1, 1);
     padding: 1.5rem;
-    background-color: white;
+    background-color: #e6e6e6;
     border-radius: 8px;
 
 }
 
-.card-pos{
+.card-pos {
     display: flex;
     justify-content: space-evenly;
-    
+
 
 }
 
+.card-body a {
+    text-decoration: none;
+    color: rgb(48, 45, 45);
+}
 
-    
+
+@include mq-sm {
+
+    .card-pos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+    }
+}

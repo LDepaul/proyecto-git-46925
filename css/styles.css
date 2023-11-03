@@ -11,34 +11,16 @@ ol {
 
 body {
   background-color: #e6e6e6;
-  background-image: url(../img/fondo3.jpg);
   font-family: "Poppins", sans-serif;
-}
-
-nav a {
-  color: #110d0d;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-weight: bold;
-  border-radius: 10px;
 }
 
 ul li {
   display: inline-block;
-  padding: 0px 20px;
-}
-
-a:hover {
-  background-color: #000;
-  color: #fff;
+  padding: 0px 10px;
 }
 
 .container {
-  margin-left: 100px;
+  margin-left: 300px;
   height: 30px;
   display: flex;
   padding: 10px 20px;
@@ -68,7 +50,7 @@ a:hover {
 .card {
   width: 350px;
   box-shadow: 0px 10px 5px 2px;
-  margin-top: 200px;
+  margin-top: 300px;
   border-radius: 8px;
 }
 
@@ -82,7 +64,7 @@ a:hover {
 .card-body {
   color: rgb(3, 1, 1);
   padding: 1.5rem;
-  background-color: white;
+  background-color: #e6e6e6;
   border-radius: 8px;
 }
 
@@ -91,10 +73,22 @@ a:hover {
   justify-content: space-evenly;
 }
 
+.card-body a {
+  text-decoration: none;
+  color: rgb(48, 45, 45);
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .card-pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer {
   background: #111;
   height: auto;
-  width: 1900px;
+  width: 100%;
   font-family: "Open sans";
   padding-top: 40px;
   color: #fff;
@@ -149,7 +143,7 @@ footer {
 
 .footer-bottom {
   background: #000;
-  width: 1900px;
+  width: 100%;
   padding: 20px 0;
   text-align: center;
 }
@@ -175,24 +169,35 @@ header {
   align-items: center;
 }
 
-.img-header {
-  width: 150px;
-  height: 75px;
+@media (min-width: 400px) and (max-width: 700px) {
+  nav li {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+  }
+}
+nav a {
+  color: #110d0d;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
-.logo {
-  margin-left: 200px;
-}
-
-.texto-contacto {
-  color: rgb(8, 8, 8);
-  text-align: center;
+nav a:hover {
+  background-color: rgb(233, 216, 216);
+  color: #221e1e;
+  box-shadow: 0px 10px 5px 2px;
 }
 
 .form {
   color: white;
   background-color: black;
-  width: 450px;
+  max-width: 450px;
   padding: 30px;
   margin: auto;
   margin-top: 100px;
@@ -215,13 +220,35 @@ header {
   margin-left: 105px;
 }
 
+.texto-contacto {
+  color: rgb(8, 8, 8);
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .form {
+    display: flex;
+    align-items: center;
+    width: 94%;
+  }
+}
+.titulo-envios {
+  text-align: center;
+  margin-top: 150px;
+}
+
 .envios {
-  color: black;
-  gap: 1rem;
+  color: rgb(248, 248, 248);
+  background-color: #363333;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width: 900px;
-  height: 500;
+  margin: 100px;
+  gap: 1rem;
 }
 
 @media (min-width: 400px) and (max-width: 700px) {
@@ -234,36 +261,150 @@ header {
     margin-right: 10px;
     margin-left: 10px;
   }
+  footer {
+    max-width: 100%;
+  }
 }
-.ofertas {
-  margin-left: 50px;
-  margin-top: 150px;
-  width: 1800px;
+.ofertas-index {
   height: 530px;
-  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
 }
 
+.ofertas {
+  margin-top: 50px;
+  width: 100%;
+  max-height: 530px;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  .ofertas {
+    max-width: 100%;
+    padding: 10px;
+    height: 400px;
+  }
+}
 .texto-nosotros {
   color: white;
   background-color: rgb(7, 3, 0);
   width: 650px;
-  text-align: center;
   padding: 16px;
   border-radius: 10px;
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
 }
 
+.carousel {
+  width: 500px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+}
+
+.carousel ul {
+  display: flex;
+  padding: 0;
+  width: 500%;
+  animation: slide 15s;
+}
+
+.carousel li {
+  list-style: none;
+  width: 100%;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+}
 @media (min-width: 400px) and (max-width: 700px) {
   header {
     display: flex;
     flex-direction: column;
   }
-  .texto-nosotros {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
+  .nosotros-conteiner img {
+    width: 90%;
   }
+}
+.titulo-toallas {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(233, 216, 216);
+  box-shadow: 0px 10px 5px 2px;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.titulo-prod {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(233, 216, 216);
+  box-shadow: 0px 10px 5px 2px;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.caja-prod {
+  padding: 90px;
+}
+
+.caja-prod p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+}
+
+.caja-prod img {
+  max-width: 280px;
+  height: 280px;
+  border-radius: 30px;
+}
+
+.caja-prod img:hover {
+  box-shadow: 0px 10px 5px 2px;
+}
+
+.conteiner-prod {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

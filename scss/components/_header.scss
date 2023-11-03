@@ -5,16 +5,22 @@ header {
     display: flex;
     padding: 16px;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    
+    
     
 
 }
 
-.img-header{
-    width: 150px;
-    height: 75px;
-}
+@include mq-sm{
+    nav li{
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
 
-.logo{
-    margin-left: 200px;
-}
+    }
+
+    }
+
+
+

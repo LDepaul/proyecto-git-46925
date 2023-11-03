@@ -1,0 +1,22 @@
+nav a {
+    color: #110d0d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+    
+
+}
+
+nav a:hover{
+    background-color: rgb(233, 216, 216);
+    // color: #fff;
+    color: #221e1e;
+    box-shadow: $sombra;
+}
+

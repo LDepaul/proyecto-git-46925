@@ -39,32 +39,22 @@
     width: 100%;
 }
 
-@keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
 
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    95%{margin-left: -300%;}
-
-}
 
 
 
 @include mq-sm {
-    header {
-        display: flex;
-        flex-direction: column;
+    // header {
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    .texto-nosotros{
+        width: 90%;
+        padding: 10px;
     }
 
-    .nosotros-conteiner img{
-        width: 90%;
-    }
+
 
     
     }

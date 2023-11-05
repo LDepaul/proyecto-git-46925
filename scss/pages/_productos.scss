@@ -54,3 +54,8 @@
     justify-content: center;
 }
 
+@include mq-sm{
+    .titulo-toallas{
+        border-radius: px;
+    }
+}

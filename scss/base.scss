@@ -17,7 +17,7 @@ ol {
 
 body{
     background-color: #e6e6e6;
-    // background-image: url(../img/fondopag1.jpg);
+    
     
     font-family: 'Poppins', sans-serif;
 }
@@ -40,7 +40,7 @@ ul li{
 
 @mixin mq-sm {
 
-    @media (min-width: 400px) and (max-width:700px) {
+    @media (min-width: 400px) and (max-width:768px) {
         @content;
     }
 

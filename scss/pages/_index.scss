@@ -1,33 +1,32 @@
-.ofertas-index{
-//     height: 530px;
-//     width: 100%;
-//     text-align: center;
-//     position: relative;
+.ofertas-index {
+    //     height: 530px;
+    //     width: 100%;
+    //     text-align: center;
+    //     position: relative;
     margin-top: 100px;
 }
 
 
 
-.ofertas{
+.ofertas {
     margin-top: 50px;
     width: 100%;
     max-height: 530px;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    
+    padding-left: 80px;
+    padding-right: 80px;
+
 }
 
-@include mq-sm{
-    .ofertas{
-    width: 100%;
-    padding: 10px;
-    height: 350px;
+@include mq-sm {
+    .ofertas {
+        
+
+        width: 100%;
+        padding: 10px;
+        height: 350px;
 
     }
 
-    
+
 }
-
-
-

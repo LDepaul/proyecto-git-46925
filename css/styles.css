@@ -19,8 +19,23 @@ ul li {
   padding: 0px 10px;
 }
 
+.barra-busqueda input {
+  display: none;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .barra-busqueda input {
+    display: inline-block;
+    width: 250px;
+    height: 25px;
+    border-radius: 20px;
+  }
+  .barra-busqueda {
+    margin-bottom: 20px;
+  }
+}
 .card {
-  width: 350px;
+  width: 320px;
   box-shadow: 0px 10px 5px 2px;
   margin-top: 300px;
   border-radius: 8px;
@@ -50,7 +65,7 @@ ul li {
   color: rgb(48, 45, 45);
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .card-pos {
     display: flex;
     flex-direction: column;
@@ -134,11 +149,19 @@ footer {
 
 header {
   color: rgb(255, 255, 255);
-  background-color: #000000;
+  background-color: #111;
   display: flex;
   padding: 16px;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo img {
+  height: 280px;
+}
+
+.logo {
+  position: absolute;
 }
 
 .container {
@@ -150,6 +173,7 @@ header {
 
 nav a {
   font-weight: bold;
+  font-size: 24px;
 }
 
 .nav {
@@ -276,7 +300,7 @@ nav a {
   margin-top: 100px;
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .form {
     display: flex;
     align-items: center;
@@ -301,7 +325,7 @@ nav a {
   gap: 1rem;
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .envios {
     display: flex;
     flex-direction: column;
@@ -324,11 +348,11 @@ nav a {
   width: 100%;
   max-height: 530px;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .ofertas {
     width: 100%;
     padding: 10px;
@@ -369,16 +393,16 @@ nav a {
   width: 100%;
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .texto-nosotros {
     width: 90%;
     padding: 10px;
   }
 }
 .titulo-toallas {
-  margin-top: 80px;
+  margin-top: 100px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: rgb(233, 216, 216);
   box-shadow: 0px 10px 5px 2px;
   border-radius: 20px;
@@ -388,7 +412,7 @@ nav a {
 
 .titulo-prod {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: rgb(233, 216, 216);
   box-shadow: 0px 10px 5px 2px;
   border-radius: 20px;
@@ -397,7 +421,7 @@ nav a {
 }
 
 .caja-prod {
-  padding: 90px;
+  margin: 50px;
 }
 
 .caja-prod p {
@@ -424,7 +448,7 @@ nav a {
   justify-content: center;
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .titulo-toallas {
     border-radius: px;
   }

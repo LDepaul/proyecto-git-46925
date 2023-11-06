@@ -40,7 +40,7 @@ ul li{
 
 @mixin mq-sm {
 
-    @media (min-width: 400px) and (max-width:768px) {
+    @media (min-width: 360px) and (max-width:768px) {
         @content;
     }
 

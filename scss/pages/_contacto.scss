@@ -2,7 +2,13 @@
     color: rgb(8, 8, 8);
     text-align: center;
     margin-top: 100px;
+    padding: 20;
 
+}
+
+.texto-contacto p{
+    padding: 10px;
+    font-weight: bold;
 }
 
 @include mq-sm{

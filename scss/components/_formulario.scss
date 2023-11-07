@@ -1,6 +1,6 @@
 .form {
     color: white;
-    background-color: black;
+    background-color: #111;
     max-width: 450px;
     padding: 30px;
     margin: auto;
@@ -24,6 +24,13 @@
     border: none;
     padding: 12px;
     font-size: 14px;
-    margin-left: 105px;
+    // margin-left: 105px;
     
 }
+
+.boton-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

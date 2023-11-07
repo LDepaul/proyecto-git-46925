@@ -22,6 +22,16 @@ header {
 
 .logo{
     position: absolute;
+    margin-left: 220px;
+    
+}
+
+@include mq-sm{
+    .logo{
+        
+        margin-left: 0;
+
+    }
     
 }
 

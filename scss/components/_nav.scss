@@ -12,7 +12,7 @@ nav a{
 }
 
 nav a:hover{
-    color: rosybrown;
+    color: #fda4af;
 }
 
 .nav{
@@ -60,7 +60,7 @@ nav a:hover{
 }
 
 .nav__links{
-    background-color: #111;
+    background-color: #111111;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -90,8 +90,11 @@ nav a:hover{
 
 
 
-@media (min-width:768px){
+@media (min-width:1200px){
+    
+
     .nav{
+        
         --state-hamburguer:scale(0);
         --state-menu: translate(0);
     }

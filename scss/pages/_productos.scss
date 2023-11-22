@@ -1,11 +1,11 @@
 .titulo-toallas{
-    margin-top: 100px;
+    margin-top: 120px;
     text-align: center;
     margin-bottom: 20px;
     background-color: rgb(233, 216, 216);
 
     box-shadow: $sombra;
-    // border-radius: 20px;
+    
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -18,34 +18,84 @@
     background-color: rgb(233, 216, 216);
     
     box-shadow: $sombra;
-    // border-radius: 20px;
+    
     margin-left: 40px;
     margin-right: 40px;
 }
 
 
 .caja-prod{
-    margin: 50px;
+    
+    margin: 100px;
+    text-align: center;
+    border-radius: 8px;
+    
+    
+    
+    
+    // box-shadow: $sombra;
+    
+
     
     // padding: 40px;
     
+
+}
+
+// .caja-prod img:hover{
+//     height: 255px;
+//     width: 285px;
+//     transition: all 0.6s;
+// }
+
+.caja-prod:hover{
+    
+    box-shadow: 0px 5px 5px 2px;
+    transition: all 0.8s;
+
 }
 
 .caja-prod p{
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
+.caja-prod span{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    
+    
+    
+
+}
 
 .caja-prod img{
-    max-width: 280px;
-    height: 280px;
-    // border-radius: 30px; 
+    width: 280px;
+    height: 250px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     
     
 }
+
+.caja-prod button {
+    
+    margin: 10px;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    
+    
+}
+
+
+
+
 
 
 
@@ -54,8 +104,10 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
+
 
 @include mq-sm{
     .titulo-toallas{

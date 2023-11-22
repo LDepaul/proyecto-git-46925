@@ -17,6 +17,7 @@ ol {
 
 body{
     background-color: #e6e6e6;
+    
     background-image: url();
     
     font-family: 'Poppins', sans-serif;
@@ -40,7 +41,7 @@ ul li{
 
 @mixin mq-sm {
 
-    @media (min-width: 360px) and (max-width:768px) {
+    @media (min-width: 350px) and (max-width:1200px) {
         @content;
     }
 

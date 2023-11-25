@@ -1,26 +1,26 @@
-.barra-busqueda input{
+.barra-busqueda input {
     display: none;
 
 }
 
 
 
-@include mq-sm{
-    .barra-busqueda input{
+@include mq-sm {
+    .barra-busqueda input {
         display: inline-block;
         width: 250px;
         height: 25px;
         border-radius: 20px;
-        
+
     }
 
-    .barra-busqueda{
+    .barra-busqueda {
         margin-bottom: 20px;
-        
+
     }
 
-   
-       
-        
-       
-    }
+
+
+
+
+}
